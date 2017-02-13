@@ -68,28 +68,5 @@ class Note
     {
         return $this->info;
     }
-
-    /**
-     * Set course
-     *
-     * @param \AppBundle\Entity\Course $course
-     *
-     * @return Note
-     */
-    public function setCourse(\AppBundle\Entity\Course $course = null)
-    {
-        $this->course = $course;
-
-        return $this;
-    }
-
-    /**
-     * Get course
-     *
-     * @return \AppBundle\Entity\Course
-     */
-    public function getCourse()
-    {
-        return $this->course;
-    }
 }
+

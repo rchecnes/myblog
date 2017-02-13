@@ -97,45 +97,5 @@ class Course
     {
         return $this->description;
     }
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->note = new \Doctrine\Common\Collections\ArrayCollection();
-    }
-
-    /**
-     * Add note
-     *
-     * @param \AppBundle\Entity\Note $note
-     *
-     * @return Course
-     */
-    public function addNote(\AppBundle\Entity\Note $note)
-    {
-        $this->note[] = $note;
-
-        return $this;
-    }
-
-    /**
-     * Remove note
-     *
-     * @param \AppBundle\Entity\Note $note
-     */
-    public function removeNote(\AppBundle\Entity\Note $note)
-    {
-        $this->note->removeElement($note);
-    }
-
-    /**
-     * Get note
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getNote()
-    {
-        return $this->note;
-    }
 }
+
